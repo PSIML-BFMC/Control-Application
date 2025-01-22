@@ -1,0 +1,15 @@
+websocket 192.168.0.29:5005
+
+kl - {"Name": "Klem", "Value": "30"}
+// Run motor at certain speed
+speed - {"Name": "SpeedMotor", "Value": "50"} // range from -500 to 500, negative is reverse, positive is forward
+//Turn sheels certain angle
+steering - {"Name": "SteerMotor", "Value": "24"} // range from -250 to 250, negative is left, positive  is right
+//Stop the car and turn wheels certain angle
+brake - {"Name": "Brake", "Value": "24"} // same as steering
+
+Camera:
+listen for serialCamera event. 
+example message: {
+    "value": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKC..."
+}
